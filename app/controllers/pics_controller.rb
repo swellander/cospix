@@ -13,7 +13,7 @@ class PicsController < ApplicationController
   end
 
   def create
-    @pic = Pic.new(pic_params)
+    @pic = current_user.pics.build(pic_params)
 
     if @pic.save
       redirect_to @pic, notice: "Pic successfully posted!"
@@ -41,7 +41,7 @@ class PicsController < ApplicationController
   private
 
   def pic_params
-    params.require(:pic).permit(:title, :description)
+    params.require(:pic).permit(:title, :description, :image)
   end
 
   def find_pic
