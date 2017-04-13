@@ -13,7 +13,7 @@
 
       - if user_signed_in?
         %ul.nav.navbar-nav.navbar-right
-          %li= link_to "Post Pic", new_pic_path
+          %li.glyphicon.glyphicon-plus= link_to "", new_pic_path
           %li= link_to "Settings", edit_user_registration_path
           %li= link_to "Log Out", destroy_user_session_path, method: :Delete
 
