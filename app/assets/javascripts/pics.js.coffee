@@ -2,12 +2,18 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(function(){
-
-  $('#masonry-container').masonry({
-    itemSelector: '.box',
-    columnWidth: 100,
-    gutterWidth: 40
-  });
-
-});
+$ ->
+  $("#pics").imagesLoaded ->
+    $("#pics").masonry
+      itemSelector: ".box"
+      columnWidth: 200,
+      isFitWidth: true
+# $(function(){
+#   $('#masonry-container').masonry({
+#     itemSelector: '.box',
+#     columnWidth: 200,
+#     isAnimated: !Modernizr.csstransitions,
+#     isFitWidth: true
+#   });
+#
+# });
