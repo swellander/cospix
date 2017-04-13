@@ -3,17 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $("#pics").imagesLoaded ->
-    $("#pics").masonry
-      itemSelector: ".box"
-      columnWidth: 200,
+  $('#pics').imagesLoaded ->
+    $('#pics').masonry
+      itemSelector: '.box'
       isFitWidth: true
-# $(function(){
-#   $('#masonry-container').masonry({
-#     itemSelector: '.box',
-#     columnWidth: 200,
-#     isAnimated: !Modernizr.csstransitions,
-#     isFitWidth: true
-#   });
-#
-# });
