@@ -34,6 +34,16 @@ Rails.application.configure do
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
 
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: ENV.fetch('cospix'),
+    access_key_id: ENV.fetch('AKIAIUL6SBPRQFINC2SQ'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('Oregon'),
+  }
+}
+
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
