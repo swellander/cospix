@@ -49,7 +49,7 @@ Rails.application.configure do
     bucket: ENV.fetch('cospix'),
     access_key_id: ENV.fetch('AKIAIUL6SBPRQFINC2SQ'),
     secret_access_key: ENV.fetch('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'),
-    s3_region: ENV.fetch('Oregon'),
+    s3_region: ENV.fetch('us-west-2'),
   }
 }
 
