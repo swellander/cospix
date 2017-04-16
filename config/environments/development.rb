@@ -42,6 +42,17 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+# Paperclip config
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: ENV.fetch('cospix'),
+    access_key_id: ENV.fetch('AKIAIW474Y2GNU6FFLJQ'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('Oregon'),
+  }
+}
+
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
