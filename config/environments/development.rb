@@ -43,13 +43,13 @@ Rails.application.configure do
   config.assets.debug = true
 
 # Paperclip config
-  config.paperclip_defaults = {
+config.paperclip_defaults = {
   storage: :s3,
   s3_credentials: {
-    bucket: "cospics",
-    access_key_id: ENV.fetch('AKIAIUL6SBPRQFINC2SQ'),
-    secret_access_key: ENV.fetch('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'),
-    s3_region: ENV.fetch('us-west-2'),
+    bucket: ENV.fetch('S3_BUCKET_NAME'),
+    access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+    secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+    s3_region: ENV.fetch('AWS_REGION'),
   }
 }
 
