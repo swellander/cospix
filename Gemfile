@@ -32,7 +32,7 @@ gem 'devise', '~> 4.2'
 gem 'paperclip'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '< 2.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
