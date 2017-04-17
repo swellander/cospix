@@ -212,7 +212,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   masonry-rails (~> 0.2.4)
-  paperclip
+  paperclip (~> 4.3, >= 4.3.6)
   pg
   puma (~> 3.0)
   rails (~> 5.0.2)
